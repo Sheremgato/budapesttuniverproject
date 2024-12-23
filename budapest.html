@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Будапешт - столица Венгрии</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #ffffff;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            background-image: url('1302998-Night-City-Panorama-HungaryBudapest-4k-Ultra-HD.jpg'); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000000; 
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #c62828;
+        }
+
+        section {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://example.com/budapest.jpg'); 
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.75);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff0000; 
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff0000;
+        }
+
+        #contacts, #about {
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.95); 
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .form-container label {
+            text-align: left;
+            font-size: 1.1rem;
+            color: #616161;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #757575;
+        }
+
+        .form-container button {
+            padding: 10px;
+            background-color: #ff0000; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #ff0000;
+        }
+
+        .city-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .city-images div {
+            text-align: center;
+        }
+
+        .city-images img {
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
+            border: 2px solid #ff0000; 
+            transition: transform 0.3s;
+        }
+
+        .city-images img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в Будапешт!</h1>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#about">О городе</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="background"></div>
+        <h1>Будапешт - сердце и душа Венгрии</h1>
+        <p>Будапешт - замечательный город с историческим прошлым и современной жизнью. Город на берегах Дуная состоит из двух частей: Буды и Пешта.</p>
+        <a href="https://ru.wikipedia.org/wiki/Будапешт" class="btn" target="_blank">Больше информации
+        </a>
+    </section>
+
+    <section id="about">
+        <h1>Зачем посещать Будапешт?</h1>
+        <p>Будапешт известен своим богатым культурным наследием, красивой архитектурой и бурной ночной жизнью. Здесь находится дворец Будайский замок, внесенный в список Всемирного наследия ЮНЕСКО, и здание Венгерского парламента, одно из самых красивых зданий в Европе.</p>
+        <div class="city-images">
+            <div>
+                <img src="parlament.jpg" alt="Parlament">
+                <p>Национальное собрание Венгрии</p>
+            </div>
+            <div>
+                <img src="9c07cff4dc1ad6be55970a930ae6361d.jpg" alt="Várhegy">
+                <p>Будайскаяя крепость</p>
+            </div>
+            <div>
+                <img src="2880x1800_1517466_[www.ArtFile.ru].jpg" alt="Lánchíd">
+                <p>Цепной мост Сечени</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h1>Контактная информация</h1>
+        <p>Если вы хотите узнать больше о туристических предложениях или программах Будапешта, свяжитесь с нами:</p>
+        <div class="form-container">
+            <label for="name">Имя</label>
+            <input type="text" id="name" placeholder="Введите свое имя...">
+            <label for="email">
+                Адрес электронной почты</label>
+            <input type="email" id="email" placeholder="Введите свой Email...">
+            <label for="message">Сообщение</label>
+            <textarea id="message" rows="4" placeholder=""></textarea>
+            <button type="submit">Отправить</button>
+        </div>
+    </section>
+
+    <footer style="padding: 20px; text-align: center; background-color: #d32f2f; color: white;">
+        © 2024 Created by Sheremetov Murat
+    </footer>
+</body>
+</html>
